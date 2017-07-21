@@ -11,7 +11,9 @@
 #### 1、导入framework
 ##### 以下两种集成方式选择一种
 - **Pod管理集成** 
+
 在 Podfile 中加入 `pod 'rongPaySDK'`
+
 `pod install` 即可
 
 - **下载Framework** 
@@ -24,14 +26,14 @@
 
 在 Podfile 中加入 
 
-`pod 'AFNetworking', '~> 3.1.0'
-pod 'FrameAccessor'
-pod 'ReactiveCocoa'
-pod 'IQKeyboardManager'
-pod 'YYModel'
-pod 'FCUUID'
-pod 'SVProgressHUD'
-pod 'Masonry'`
+`pod 'AFNetworking', '~> 3.1.0'`
+`pod 'FrameAccessor'`
+`pod 'ReactiveCocoa'`
+`pod 'IQKeyboardManager'`
+`pod 'YYModel'`
+`pod 'FCUUID'`
+`pod 'SVProgressHUD'`
+`pod 'Masonry'`
 导入第三方`pod install`
 
 #### 2、配置plist文件
