@@ -26,17 +26,19 @@
 
 在 Podfile 中加入 
 
-`pod 'AFNetworking', '~> 3.1.0'`
-`pod 'FrameAccessor'`
-`pod 'ReactiveCocoa'`
-`pod 'IQKeyboardManager'`
-`pod 'YYModel'`
-`pod 'FCUUID'`
-`pod 'SVProgressHUD'`
-`pod 'Masonry'`
-导入第三方`pod install`
+</br>`pod 'AFNetworking', '~> 3.1.0'`
+</br>`pod 'FrameAccessor'`
+</br>`pod 'ReactiveCocoa'`
+</br>`pod 'IQKeyboardManager'`
+</br>`pod 'YYModel'`
+</br>`pod 'FCUUID'`
+</br>`pod 'SVProgressHUD'`
+</br>`pod 'Masonry'`
+
+</br>导入第三方 `pod install`
 
 #### 2、配置plist文件
+
 因收银台会调用摄像头，部分界面会改变状态栏颜色，需在plist文件中加入以下代码：
 ``` 
 <key>NSCameraUsageDescription</key>
@@ -48,9 +50,11 @@
 -------------------
 #### 使用
 #### 1、初始化
+
 ``` 
 [RPayManager defaultManager];
 ```
+
 #### 2、调用收银台
 
 ``` 
@@ -58,7 +62,9 @@
 YLog(@"支付结果：%@", result);
 }];
 ```
+
 参数说明
+
 ``` 
 @param navigationController 导航控制栏
 @param title 订单标题
@@ -69,7 +75,9 @@ YLog(@"支付结果：%@", result);
 @param operatorNo 操作员号
 ```
 #### 3、另注
+
 在推出收银台的页面中设置导航栏颜色，加入如以下示例代码：
+
 ``` 
 - (void)viewWillAppear:(BOOL)animated {
 [super viewWillAppear:animated];
@@ -80,9 +88,9 @@ self.navigationController.navigationBar.hidden = NO;
 ```
 #### 更多
 `[下载demo工程了解更多]`
-- 快速体验：下载[testRongPay](https://github.com/Junior-Young/rongPaySDK)
+- 快速体验：下载[testRongPay](https://github.com/Junior-Young/testRongPay)
 - 查看demo，可以更好的了解如何集成，每个功能的使用。
-- 离线版说明文档：使用说明.pdf
+- 离线版说明文档：[使用说明.pdf](https://github.com/Junior-Young/testRongPay)
 
 #### 联系我们
 
